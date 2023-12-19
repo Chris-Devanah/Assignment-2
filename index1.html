@@ -3,79 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">    
-    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>WP Pusher</title>
 </head>
 <body>
-    <div id="main">
-        <div id="intro">
-            <img src="C:\Users\nnana\OneDrive\Desktop\altschool\New folder\Logo (1).png" alt="Logo">
-
-            <h1>For Individuals</h1>
-            <p id="intro-p">
-                Start benefiting from the wellness experience. For
-                companies looking to increase productivity and improve
-                organizational wellness.
-            </p>
-        </div>
-
-        <div id="form-box"> 
-            <form action="/submit_application" method="post">
-                <div id="fname">
-                    <label for="fname">First Name</label><br>
-                    <input type="text" class="input" name="fname" required>
-                </div>
-                <div id="lname">
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" class="input" name="lname">
-                </div>
-
-                <div id="gender">
-                    <label for="gender">Gender</label><br>
-                    <select name="gender" class="input" required>
-                        <option value="" disabled selected>Select your gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div id="dob">
-                    <label for="dob">Date of Birth</label><br>
-                    <input type="date" class="input" name="dob" required>
-                </div>
-
-                <div id="weight">
-                    <label for="weight">Weight(KG)</label><br>
-                    <input type="number" id="weight-box" class="input" name="weight" placeholder="Enter Weight" required>
-                </div>
-
-                <div id="height">
-                    <label for="height">Height(CM)</label><br>
-                    <input type="number" id="height-box" class="input" name="height" placeholder="Enter Height here..." required>
-                </div>
-
-                <div id="activity">
-                    <label for="Activity Level">Activity level</label><br>
-                    <select id="Activity" class="activityinput" name="activity" required>
-                        <option value="" disabled selected>Select Level</option>
-                        <option value="regular">regular</option>
-                        <option value="not so regular">not too regular</option>
-                        <option value="once once sha">once once sha</option>
-                    </select>
-                </div>
-
-                <div id="password">
-                    <label for="password">Password</label><br>
-                    <input type="password" class="password" name="password" required><br>
-                </div>
-
-                <div id="register">
-                    <button class="btn" type="submit">Register</button>
-                </div>
-                <p id="form-text">By clicking Register, you agree to our <a href="url">Terms of Use</a> and our <a href="url">Privacy Policy</a></p>
-            </form>
-        </div>
+    <div>
+        <nav id="nav-bar" class="nav-bar">
+            <a href="#"> <img src="wppusher-logo copy.png"></a>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
     </div>
-</body>
+    <div id="full-card">
+        <div id="form-card">
+            <div id="right">
+                <form>
+                    <section class="Heading">
+                        <div>
+                            <h2>Checkout</h2>
+                        </div>
+                    </section>
+                    <section class="info-section">
+                        <span id="basic-info">
+                            <span class="circle"><h4 class="text-circle">1</h4></span>
+                            <h4>Your Basic Information</h4>
+                        </span>
+                        <div id="name">
+                            <div>
+                                <label for="fname">First Name</label><br>
+                                <input type="text" class="label" name="fname" placeholder="Jane" required>
+                            </div>
+                            <div>
+                                <label for="lname">Last Name</label><br>
+                                <input type="text" class="label" id="lname" placeholder="Doe" required>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="email-box"> 
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Janedoe@example.com" required>
+                    </div>
+                    <section id="pay-section">
+                        <div id="bottom-text">
+                            <span id="basic-info">
+                                <span class="circle"><h4 class="text-circle">2</h4></span>
+                                <h4>Your Payment Information</h4>
+                            </span>
+                        </div>
+                        <div id="creditCard">
+                            <label for="cardNumber">Credit card</label><br>
+                            <div id="credit-input">
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required>
+                                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+                                <input type="text" id="cvv" name="cvv" placeholder="CVC" required>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Buy">
+                        <button class="btn" type="submit">BUY WP Pusher</button>
+                    </div>
+                    <div id="email-box">
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Janedoe@example.com" required>
+                    </div>
+                    
+                    <section id="pay-section">
+                        <div id="bottom-text">
+                            <span id="basic-info">
+                                <span class="circle"><h4 class="text-circle">2</h4></span>
+                                <h4>Your Payment Information</h4>
+                            </span>
+                        </div>
+                    
+                        <div id="creditCard">
+                            <label for="cardNumber">Credit card</label><br>
+                            <div id="credit-input">
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required>
+                                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+                                <input type="text" id="cvv" name="cvv" placeholder="CVC" required>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div id="Buy">
+                        <button class="btn" type="submit">BUY WP Pusher</button>
+                    </div>
+                    <div id="footer">
+                        <div id="footer-text">
+                            <span class="ft-circle"><h4>?</h4></span>
+                            <span>
+                                <h5 id="help">Need any help?</h5>
+                                <p>Don't hesitate to contact support!</p>
+                            </span>
+                        </div>
+                        <button id="foot-btn"> powered by <span>stripe</span></button>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+    
 </html>
